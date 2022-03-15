@@ -1,6 +1,7 @@
 import { IoMdWine } from "react-icons/io";
 import { Link } from 'react-router-dom';
-import {IconContext} from "react-icons";
+import logo from '../assets/logo.jpg';
+import "../css/Navbar.css";
 import React from 'react';
 
 
@@ -9,22 +10,25 @@ const Navbar = () => {
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-dark">
             <div className="container-fluid">
-                <div className="navbar-brand">
-                        <IoMdWine />
-                    <Link to="/vasos">
-                                Tipo de Vasos    
-                    </Link>
-                </div>
+            <Link className="text-3xl font-bold font-heading" to="/">
+              <img className="h-2 navbar-logo " src={logo} alt="logo" />
+            </Link>
+            <div className="navbar-brand">
+                <IoMdWine />
+                <Link style={{ color: 'white', textDecoration: 'inherit'}} to="/vasos">
+                    Species
+                </Link>
+            </div>
 
                 <div className="navbar-brand">
                         <IoMdWine />
-                    <Link to="/films">
-                        Films
-                    </Link>
+                        <Link style={{ color: 'white', textDecoration: 'inherit'}} to="/films">
+                            Films
+                        </Link>
                 </div>
                 <div className="navbar-brand">
                         <IoMdWine />
-                    <Link to="/people">
+                    <Link style={{ color: 'white', textDecoration: 'inherit'}} to="/people">
                         People
                     </Link>
                 </div>

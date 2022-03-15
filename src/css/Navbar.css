@@ -9,3 +9,17 @@
       rgba(45, 20, 44, 1) 100%
     );
   }
+
+  .navbar-logo {
+    position: relative;
+    justify-self: start;
+    margin-left: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+    width: 100px;
+  }
+
+  .text-link {
+    color: rgb(white, white, white);
+    text-decoration: inherit;
+}
